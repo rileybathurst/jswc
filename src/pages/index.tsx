@@ -4,6 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 
 import "../styles/app.scss";
+import Seo from "../components/seo";
 
 // this goes in the seo file as thats the helmet
 // it's not working yet
@@ -15,8 +16,10 @@ const IndexPage = () => {
     <>
       <Header />
       <main className="page-styles">
-        <title>Jarrod Semmens Window Cleaning</title>
 
+        <Seo
+          title="Jarrod Semmens Window Cleaning"
+        />
 
         <article className="triad">
           <h2><a href="tel:5305811987">

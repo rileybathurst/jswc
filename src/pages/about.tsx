@@ -3,13 +3,16 @@ import { Link } from "gatsby"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 
 const AboutPage = () => {
   return (
     <>
       <Header />
       <main>
-        <title>About Us</title>
+      <Seo
+          title="About Us"
+        />
         <h2 className="heading-styles">About Us</h2>
         <p className="paragraph-styles">
           When was the last time you asked a Tahoe City, CA, cleaning service to wash away the dirt from your windows?

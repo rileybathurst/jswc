@@ -3,13 +3,16 @@ import { Link } from "gatsby"
 
 import Header from "../components/header"
 import Footer from "../components/footer"
+import Seo from "../components/seo"
 
 const WashingPage = () => {
   return (
     <>
+      <Seo
+        title="Window Washing"
+      />
       <Header />
       <main>
-        <title>Window Washing</title>
         <h2 className="heading-styles">Window Washing</h2>
         <p className="paragraph-styles">
           A quick, easy way to get your home cleaning project started is to contact the team at Jarrod Semmens Window Cleaning to request an  estimate for a Tahoe City, CA, window cleaner.
