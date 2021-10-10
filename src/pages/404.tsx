@@ -13,6 +13,9 @@ const NotFoundPage = () => {
       <Seo
           title="Not Found"
         />
+
+        <article className="triad">
+          <section className="one-two">
         <h2>Page not found</h2>
         <p className="paragraph-styles">
           Sorry{" "}
@@ -23,6 +26,8 @@ const NotFoundPage = () => {
           <br />
           <Link to="/">Go home</Link>.
         </p>
+        </section>
+        </article>
       </main>
       <Footer />
     </>
