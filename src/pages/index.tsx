@@ -6,20 +6,15 @@ import Footer from '../components/footer'
 import "../styles/app.scss";
 import Seo from "../components/seo";
 
-// this goes in the seo file as thats the helmet
-// it's not working yet
-<link rel="stylesheet" href="https://use.typekit.net/vpi7tts.css" />
-
-// markup
 const IndexPage = () => {
   return (
     <>
+      <Seo
+        title="Jarrod Semmens Window Cleaning"
+      />
       <Header />
-      <main className="page-styles">
 
-        <Seo
-          title="Jarrod Semmens Window Cleaning"
-        />
+      <main className="page-styles">
 
         <article className="triad">
           <h2><a href="tel:5305811987">

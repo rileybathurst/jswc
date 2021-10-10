@@ -4,4 +4,6 @@
 npm start
 ```
 
-Gatsby build
+[https://github.com/rileybathurst/jswc](Github)
+
+Simple and efficient site to get the info through.
