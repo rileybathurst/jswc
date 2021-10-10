@@ -1,0 +1,30 @@
+/*------------------------------------*/
+//  #MEDIA
+/*------------------------------------*/
+
+/*------------------------------------*/
+//  #SVG
+/*------------------------------------*/
+
+
+svg {
+  width: 100%;
+  max-width: 3rem;
+  max-height: 3rem;
+  fill: currentColor;
+  margin-block: 1.6rem;
+}
+
+.svg__backer {
+  fill: none;
+}
+
+.yelp {
+  fill: #d32323;
+
+}
+
+.yelp__link:hover .yelp {
+
+  fill: red;
+}

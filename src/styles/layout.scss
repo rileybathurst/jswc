@@ -1,0 +1,69 @@
+/*------------------------------------*/
+//  #LAYOUT
+/*------------------------------------*/
+
+.triad {
+  display: grid;
+  grid-gap: 0.8rem;
+  padding-inline: 0.8rem;
+  max-width: var(--caliber);
+  margin-inline: auto;
+
+  // @media (min-width: 30rem) {
+  @media (min-width: $pad) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .one-two {
+      grid-column: 1/3;
+    }
+
+    .one-three {
+      grid-column: 1/4;
+    }
+
+    .two-three {
+      grid-column: 2/4;
+    }
+  }
+}
+
+/*------------------------------------*/
+//  #HR
+/*------------------------------------*/
+
+hr {
+  width: 100%;
+}
+
+/*------------------------------------*/
+//  #HEADER
+/*------------------------------------*/
+
+header {
+  max-width: calc(var(--caliber) - 1.6rem);
+  margin-inline: auto;
+  padding-inline: 0.8rem;
+}
+
+/*------------------------------------*/
+//  #PAGE
+/*------------------------------------*/
+
+/*------------------------------------*/
+//  #FOOTER
+/*------------------------------------*/
+
+footer nav ul {
+  flex-direction: column;
+}
+
+.copyright {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding-inline-start: 0; // browser reset
+  max-width: var(--caliber);
+  margin-inline: auto;
+  padding-inline: 0.8rem;
+  gap: 0.8rem;
+}

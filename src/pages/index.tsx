@@ -25,8 +25,8 @@ const IndexPage = () => {
           </h2>
 
           <section className="two-three">
-            <h2 className="heading-styles">Providing Year Round Service</h2>
-            <p className="paragraph-styles">
+            <h2>Providing Year Round Service</h2>
+            <p>
               We’re your local number one source in Window Cleaning in Tahoe City and surrounding areas.
               Besides window cleaning, we offer gutter cleaning, screen repair and winter snow shoveling.
               We are locally owned and operated company and our passion is about helping others achieve their window cleaning needs.
@@ -41,8 +41,8 @@ const IndexPage = () => {
 
         <article className="triad">
           <section className="one-two">
-            <h2 className="heading-styles">Quality Service &amp; Affordable Prices</h2>
-            <p className="paragraph-styles">Jarrod Semmens Window Cleaning’s mission has always been to provide our customers with quality services as well as fair, competitive prices in a timely &amp; courteous manner.
+            <h2>Quality Service &amp; Affordable Prices</h2>
+            <p>Jarrod Semmens Window Cleaning’s mission has always been to provide our customers with quality services as well as fair, competitive prices in a timely &amp; courteous manner.
               This is the reason for our success today.
               We guarantee our work and we never leave our customer unsatisfied.
               We carry full liability insurance and our employees are bonded.

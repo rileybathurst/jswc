@@ -1,0 +1,19 @@
+/*------------------------------------*/
+//  #LISTS
+/*------------------------------------*/
+
+ul li {
+  margin-block-end: 0.4rem
+}
+
+/*------------------------------------*/
+//  #NAV
+/*------------------------------------*/
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding-inline-start: 0; // browser reset
+  gap: 0.8rem
+}

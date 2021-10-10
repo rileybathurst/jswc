@@ -1,0 +1,14 @@
+
+a {
+  color: midnightblue;
+  @media (prefers-color-scheme: dark) {
+    color: whitesmoke;
+  }
+}
+
+a:hover {
+  color: mediumblue;
+  @media (prefers-color-scheme: dark) {
+    color: lightgoldenrodyellow;
+  }
+}

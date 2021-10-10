@@ -14,8 +14,8 @@ const Header = () => {
       </Helmet>
 
 
-      <header className="page-styles">
-        <h1 className="heading-styles"><Link to="/">Jarrod Semmens<br />Window Cleaning</Link></h1>
+      <header>
+        <h1><Link to="/">Jarrod Semmens<br />Window Cleaning</Link></h1>
         {/* <button>MENU</button> */}
 
         <hr />

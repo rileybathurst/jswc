@@ -1,0 +1,71 @@
+/*------------------------------------*/
+//  #TYPOGRAPHY
+/*------------------------------------*/
+
+// https://type-scale.com 1.2 minor third
+
+// 24px baseline
+// 48px
+// 72px
+// 96px
+// 120px
+
+body {
+  font-family: fieldwork, "-apple-system", "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: brix-slab, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  margin-block-start: 0; // browser reset
+}
+
+h1 {
+  font-size: var(--freel);
+  line-height: 1.6; // 64px
+}
+
+h2 {
+  font-size: var(--jobs);
+}
+
+h3 {
+  font-size: var(--rose);
+}
+
+h4 {
+  font-size: var(--houghton);
+}
+
+h5 {
+  font-size: var(--relay);
+}
+
+h6 {
+  font-size: var(--stevens);
+}
+
+small,
+.text_small {
+  font-size: var(--tamarack);
+}
+
+p {
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5; // 24px
+  margin-block-end: 1.6rem;
+}
+
+@media (min-width: $pad) {
+  .end {
+    text-align: right;
+  }
+}
