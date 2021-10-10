@@ -1,20 +1,19 @@
-import * as React from "react"
 import { Link } from "gatsby"
+import * as React from "react"
+
+import Nav from "./nav"
 
 const Header = () => {
   return (
     <header className="page-styles">
-      <h1 className="heading-styles">Jarrod Semmens Window Cleaning</h1>
-      <p><a href="tel:5305811987">Call Today For A Free Estimate! (530) 581-1987</a></p>
+      <h1 className="heading-styles"><Link to="/">Jarrod Semmens<br />Window Cleaning</Link></h1>
+      {/* <button>MENU</button> */}
 
-      <nav>
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/washing">Window Washing</Link></li>
-          <li><Link to="/screens">Broken Screen Replacement</Link></li>
-        </ul>
-      </nav>
+      <hr />
+
+      <Nav />
+
+      <hr />
     </header>
   )
 }

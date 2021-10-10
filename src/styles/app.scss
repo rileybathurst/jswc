@@ -1,8 +1,31 @@
+$pad: 30rem;
+
+:root {
+  --caliber: 50rem;
+}
+
 /*------------------------------------*/
 //  #HEADER
 /*------------------------------------*/
 
+header {
+  max-width: var(--caliber);
+  margin-inline: auto;
+}
 
+h1 {
+  font-family: brix-slab, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding-inline-start: 0; // browser reset
+  gap: 0.8rem
+}
 
 /*------------------------------------*/
 //  #PAGE
@@ -14,9 +37,40 @@
   font-family: "-apple-system", "Roboto", sans-serif;
 }
 
+.triad {
+  display: grid;
+  grid-gap: 0.8rem;
+  padding-inline: 0.8rem;
+  max-width: var(--caliber);
+  margin-inline: auto;
+
+  // @media (min-width: 30rem) {
+  @media (min-width: $pad) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .one-two {
+      grid-column: 1/3;
+    }
+
+    .one-three {
+      grid-column: 1/4;
+    }
+
+    .two-three {
+      grid-column: 2/4;
+    }
+  }
+}
+
 /*------------------------------------*/
 //  #TYPOGRAPHY
 /*------------------------------------*/
+
+p {
+  font-family: fieldwork, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .heading-styles {
   margin-block-start: 0; // browser reset
@@ -25,4 +79,45 @@
 
 .paragraph-styles {
   margin-block-end: 48px;
+}
+
+@media (min-width: $pad) {
+.end {
+  text-align: right;
+}
+}
+
+hr {
+  width: 100%;
+}
+
+a {
+  color: midnightblue;
+}
+
+a:hover {
+  color: mediumblue;
+}
+
+ul li {
+  margin-block-end: 0.4rem
+}
+
+/*------------------------------------*/
+//  #FOOTER
+/*------------------------------------*/
+
+footer nav ul {
+  flex-direction: column;
+}
+
+.copyright {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding-inline-start: 0; // browser reset
+  max-width: var(--caliber);
+  margin-inline: auto;
+  padding-inline: 0.8rem;
+  gap: 0.8rem;
 }
