@@ -52,7 +52,6 @@ module.exports = {
     // gsv: 't-GHhCwvq1SjOG3qV4JFNZpOo_6c5og1i1UlH_WvIOw'
   },
   plugins: [
-    "gatsby-plugin-csp",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
@@ -74,8 +73,8 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeScriptHashes: false,
         directives: {
-          "script-src": "'self' unsafe-inline",
-          "style-src": "'self' unsafe-inline *.typekit.net",
+          "script-src": "'self' 'unsafe-inline'",
+          "style-src": "'self' 'unsafe-inline' *.typekit.net",
           "font-src": "'self' use.typekit.net",
         }
       }
