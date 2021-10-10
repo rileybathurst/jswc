@@ -74,8 +74,8 @@ module.exports = {
         mergeStyleHashes: false, // you can disable styles sha256 hashes
         mergeScriptHashes: false,
         directives: {
-          "script-src": "'self' 'unsafe-inline'",
-          "style-src": "'self' 'unsafe-inline' use.typekit.net p.typekit.net",
+          "script-src": "'self' 'unsafe-inline' unsafe-inline",
+          "style-src": "'self' 'unsafe-inline' *.typekit.net",
           "font-src": "'self' use.typekit.net",
         }
       }
