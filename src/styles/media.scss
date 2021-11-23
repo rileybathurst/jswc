@@ -28,3 +28,11 @@ svg {
 
   fill: red;
 }
+
+.svg-lines {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1px;
+  max-width: 10rem;
+  max-height: 15rem;
+}

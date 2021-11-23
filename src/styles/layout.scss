@@ -44,7 +44,6 @@ hr {
 /*------------------------------------*/
 
 header {
-
   display: grid;
 
   > .gatsby-image-wrapper {
@@ -59,10 +58,21 @@ header {
     grid-column: 1/3;
     max-width: calc(var(--caliber) - 1.6rem);
     margin-inline: auto;
-    padding-inline: 0.8rem;
     z-index: 3; // why is this behind the image?
     width: 100%;
     display: grid;
+
+    @media (min-width: $pad) {
+      padding-inline: 0.8rem;
+    }
+
+    .forrest {
+      grid-row: 1;
+      grid-column: 1/3;
+      // width: 100vw;
+      max-height: 10rem;
+      z-index: -1;
+    }
   }
 
   button {
@@ -70,6 +80,10 @@ header {
     grid-column: 1/3;
     width: 100%;
     height: 2rem;
+    text-align: start;
+    padding-inline-start: 0.8rem;
+    border: 2px solid white;
+    border-radius: 0.2rem;
 
     @media (min-width: $pad) {
       display: none;
@@ -84,6 +98,11 @@ header {
     min-height: 5rem;
     max-width: 10rem;
     max-height: 10rem;
+    margin-inline-start: 0.8rem;
+
+    @media (min-width: $pad) {
+      margin-inline-start: 0;
+    }
   }
 
   .cartoon {
@@ -94,6 +113,7 @@ header {
     place-self: end;
     background-color: palegoldenrod;
     border: 2px solid white;
+    transform: translate3d(2rem, 2rem, 0);
   }
 
   .large_menu {
@@ -105,11 +125,46 @@ header {
     grid-column: 1/3;
     margin-inline: auto;
   }
+
+/*   nav {
+  } */
+  
+  .menu__small { // now needs a name change
+    grid-row: 3;
+    grid-column: 1;
+    margin-inline-start: 0.8rem;
+    transition: 5s ease-in-out;
+    z-index: -2; // this has a little problem with the header image being infront of themmenu as its in a different parent element
+    height: auto;
+
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+} // header
+
+.large_menu {
+  // background-color: whitesmoke;
+  background-color: ghostwhite;
+  width: 100%;
+
+  nav {
+    max-width: var(--caliber);
+    margin-inline: auto;
+  }
 }
 
 /*------------------------------------*/
 //  #PAGE
 /*------------------------------------*/
+
+.page-title {
+  max-width: var(--caliber);
+  margin-inline: auto;
+}
 
 /*------------------------------------*/
 //  #FOOTER

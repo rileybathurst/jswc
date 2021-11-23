@@ -1,0 +1,72 @@
+.card {
+}
+
+.card-content {
+  background: var(--mercury);
+  padding: 0.8rem;
+  border-radius: 0.75rem;
+  max-width: 42rem; // guess and check
+}
+
+.squeegee-wrapper {
+  width: 100%;
+  padding-inline: 0.8rem;
+  max-width: var(--caliber);
+  margin-inline: auto;
+
+  .squeegee {
+    mix-blend-mode: multiply;
+    float: right;
+    width: 10rem;
+    shape-outside: polygon(-0 23px, 100% 7.31%, 103.35% 90.91%, 44.83% 90.83%, 53.84% 184px, -0.64% 37.32%, 16.03% 23.75%);
+    place-self: end;
+    transform: scaleX(-1); // I know this is only one but use it for now
+  }
+}
+
+.hero {
+  margin-block-end: 3rem; // 48px
+}
+
+
+// named secondary to hero
+.sidekick {
+
+  max-width: 60rem;
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr;
+  // gap: 1rem;
+
+  .cozy {
+    max-width: var(--caliber);
+    grid-row: 1/3;
+    grid-column: 1/3;
+    border-radius: 0.75rem;
+  }
+
+  blockquote {
+    grid-row: 1;
+    grid-column: 3;
+    padding: 1rem;
+  }
+
+  article {
+    grid-row: 2/4;
+    grid-column: 2/4;
+    background-color: var(--mercury);
+    border-radius: 0.75rem;
+    z-index: 1;
+    padding: 1rem;
+    // max-width: var(--caliber);
+    padding-inline-start: 4rem;
+  }
+
+  svg {
+    grid-row: 3/5;
+    grid-column: 1/3;
+    justify-self: end;
+    z-index: 1;
+  }
+}

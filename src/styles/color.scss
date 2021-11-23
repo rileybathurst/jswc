@@ -1,6 +1,7 @@
 body {
   @media (prefers-color-scheme: dark) {
     background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 27%));
-    color: whitesmoke;
+    color: ghostwhite;
   }
 }
+
