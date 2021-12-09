@@ -5,3 +5,72 @@ body {
   }
 }
 
+.large_menu {
+  background-color: ghostwhite;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 27%));
+  }
+
+  a {
+    @media (prefers-color-scheme: dark) {
+      background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+      color: whitesmoke;
+    }
+  }
+}
+
+.card-content {
+  background-color: var(--mercury);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+  }
+}
+
+.sidekick {
+  article {
+    background-color: var(--mercury);
+
+    @media (prefers-color-scheme: dark) {
+      background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+    }
+  }
+}
+
+header {
+  .cartoon {
+    background-color: palegoldenrod;
+    border: 2px solid whitesmoke;
+
+    @media (prefers-color-scheme: dark) {
+      background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+      border: 2px solid hsl(var(--lake-hs), calc(var(--lake-l) - 27%));
+    }
+  }
+}
+
+.squeegee {
+  mix-blend-mode: multiply;
+
+  @media (prefers-color-scheme: dark) {
+    stroke: whitesmoke;
+    mix-blend-mode: screen;
+  }
+}
+
+.stripe {
+  @supports not (background-color: lch(95% 22 88)) {
+    background-color: lch(95% 22 88);
+  }
+  background-color: rgb(99% 93% 78%);
+  border: 1px solid rgb(103% 74% 18%);
+
+  @media (prefers-color-scheme: dark) {
+    @supports not (background-color: lch(95% 22 88)) {
+      background-color: lch(17% 22 79);
+    }
+    background-color: rgb(21% 15% 2%);
+    border: 1px solid rgb(103% 74% 18%);
+  }
+}

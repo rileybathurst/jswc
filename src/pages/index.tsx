@@ -30,8 +30,8 @@ const IndexPage = () => {
       <main className="page-styles">
 
         <h2 className="page-title"><a href="tel:5305811987">Call Today For A Free Estimate! (530) 581-1987</a></h2>
-        
-        
+
+
         <article className="hero">
 
           <div className="squeegee-wrapper">
@@ -50,20 +50,12 @@ const IndexPage = () => {
               </div>
 
             </section>
-            {/* <Squeegee /> */}
           </div>
-
           {/* <hr className="one-three" /> */}
         </article>
 
-
-
-
-
-
-
         <div className="sidekick">
-        <Cozy />
+          <Cozy />
           <blockquote>
             A wonderful window cleaning service! Efficient, professional and reasonable. We’ve used them for years.
             <cite>Jeff P - Yelp</cite>

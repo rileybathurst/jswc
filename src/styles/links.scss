@@ -7,7 +7,7 @@ a {
 }
 
 a:hover {
-  color: hsl(var(--pine-hs), calc(var(--pine-s) - 13%));
+  color: hsl(var(--pine-hs), calc(var(--pine-l) - 13%));
   @media (prefers-color-scheme: dark) {
     color: lightgoldenrodyellow;
   }
@@ -15,15 +15,12 @@ a:hover {
 
 .large_menu a {
   padding: 0.5rem;
-  background-color: whitesmoke;
   border-radius: 0.25rem;
   transition: 0.5s ease-in-out;
   text-decoration: none;
 }
 
 .large_menu a:hover {
-  // color: 
-  background-color: white;
   text-decoration: underline;
 }
 
