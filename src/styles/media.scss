@@ -6,7 +6,6 @@
 //  #SVG
 /*------------------------------------*/
 
-
 svg {
   width: 100%;
   max-width: 3rem;
@@ -21,11 +20,9 @@ svg {
 
 .yelp {
   fill: #d32323;
-
 }
 
 .yelp__link:hover .yelp {
-
   fill: red;
 }
 
@@ -36,3 +33,7 @@ svg {
   max-width: 10rem;
   max-height: 15rem;
 }
+
+/* .tahoe-svg svg {
+  fill: pink; // test
+} */

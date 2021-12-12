@@ -57,8 +57,8 @@ const IndexPage = () => {
         <div className="sidekick">
           <Cozy />
           <blockquote>
-            A wonderful window cleaning service! Efficient, professional and reasonable. We’ve used them for years.
-            <cite>Jeff P - Yelp</cite>
+            <h3>A wonderful window cleaning service! Efficient, professional and reasonable. We’ve used them for years.</h3>
+            <q cite="https://www.yelp.com/biz/semmens-jarrod-window-cleaning-tahoe-city">Jeff P - Yelp</q>
           </blockquote>
 
           <article className="triad">

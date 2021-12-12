@@ -20,9 +20,9 @@ function SmallMenu() {
   if (menu === 'open') {
     return (
       <>
-      <button onClick={() => setMenu(menu = 'closed')}>Close</button>
-      <Nav />
-        </>
+        <button onClick={() => setMenu(menu = 'closed')}>Close</button>
+        <Nav />
+      </>
     );
   } else {
     return (
@@ -53,11 +53,13 @@ const Header = () => {
         <div className="header__container">
           <Forrest />
           <Logo />
-          <h1 className="sr-only"><Link to="/">Jarrod Semmens<br />Window Cleaning</Link></h1>
+          <h1 className="sr-only"><Link to="/">Jarrod Semmens Window Cleaning</Link></h1>
 
           <SmallMenu />
 
+          {/* <div className='cartoon__wrapper'> */}
           <Cartoon />
+          {/* </div> */}
         </div>
 
         <div className="large_menu">

@@ -9,14 +9,25 @@
 
 .squeegee-wrapper {
   width: 100%;
-  padding-inline: 0.8rem;
   max-width: var(--caliber);
   margin-inline: auto;
+
+  @media (min-width: $pad) {
+    padding-inline: 0.8rem;
+  }
 
   .squeegee {
     float: right;
     width: 10rem;
-    shape-outside: polygon(-0 23px, 100% 7.31%, 103.35% 90.91%, 44.83% 90.83%, 53.84% 184px, -0.64% 37.32%, 16.03% 23.75%);
+    shape-outside: polygon(
+      -0 23px,
+      100% 7.31%,
+      103.35% 90.91%,
+      44.83% 90.83%,
+      53.84% 184px,
+      -0.64% 37.32%,
+      16.03% 23.75%
+    );
     place-self: end;
     transform: scaleX(-1); // I know this is only one but use it for now
   }
@@ -28,7 +39,6 @@
 
 // named secondary to hero
 .sidekick {
-
   max-width: 60rem;
   margin-inline: auto;
 
