@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Header, { Cartoon } from '../components/header'
 import Footer from '../components/footer'
 
-import "../styles/app.scss";
+// import "../styles/app.scss";
 import Seo from "../components/seo";
 
 import SqueegeeSVG from '../images/squeegee'

@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Nav from "./nav"
 import Logo from "../images/logo"
+import Button from './button'
 
 export function Forrest() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/adam-vradenburg-_gu7E90QChU-unsplash-compressed.jpg" alt="forrest image" className="forrest" />
@@ -14,25 +15,7 @@ export function Cartoon() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_32749018_Preview-transparent.png" alt="cartoon window cleaner" className="cartoon" />
 }
 
-function SmallMenu() {
-  let [menu, setMenu] = useState('closed');
 
-  if (menu === 'open') {
-    return (
-      <>
-        <button onClick={() => setMenu(menu = 'closed')}>Close</button>
-        <Nav />
-      </>
-    );
-  } else {
-    return (
-      <>
-        <button onClick={() => setMenu(menu = 'open')}>Menu</button>
-        {/* <Nav /> */}
-      </>
-    );
-  }
-}
 
 const Header = () => {
   return (
@@ -48,17 +31,18 @@ const Header = () => {
       </Helmet>
 
       <header>
-        <Forrest />
+        {/* <Forrest /> */}
 
         <div className="header__container">
           <Forrest />
           <Logo />
           <h1 className="sr-only"><Link to="/">Jarrod Semmens Window Cleaning</Link></h1>
 
-          <SmallMenu />
+          {/* <SmallMenu /> */}
+          <Button />
 
           {/* <div className='cartoon__wrapper'> */}
-          <Cartoon />
+          {/* <Cartoon /> */}
           {/* </div> */}
         </div>
 
