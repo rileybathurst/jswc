@@ -7,14 +7,19 @@ import Nav from "./nav"
 import Logo from "../images/logo"
 import Button from './button'
 
+/* working offline
 export function Forrest() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/adam-vradenburg-_gu7E90QChU-unsplash-compressed.jpg" alt="forrest image" className="forrest" />
-}
+} */
 
+/* working offline
 export function Cartoon() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_32749018_Preview-transparent.png" alt="cartoon window cleaner" className="cartoon" />
-}
+} */
 
+export function Cartoon() {
+  return <StaticImage src="../images/test.jpg" alt="cartoon window cleaner" className="cartoon" />
+}
 
 
 const Header = () => {
@@ -30,20 +35,20 @@ const Header = () => {
         />
       </Helmet>
 
+      <h1 className="sr-only"><Link to="/">Jarrod Semmens Window Cleaning</Link></h1>
       <header>
         {/* <Forrest /> */}
 
         <div className="header__container">
-          <Forrest />
-          <Logo />
-          <h1 className="sr-only"><Link to="/">Jarrod Semmens Window Cleaning</Link></h1>
+          {/* <Forrest /> */}
+          {/* <Logo /> */}
 
           {/* <SmallMenu /> */}
           <Button />
 
-          {/* <div className='cartoon__wrapper'> */}
-          {/* <Cartoon /> */}
-          {/* </div> */}
+          <div className='cartoon__wrapper'>
+            <Cartoon />
+          </div>
         </div>
 
         <div className="large_menu">

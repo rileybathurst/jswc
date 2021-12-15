@@ -1,5 +1,8 @@
 
 import React, { useState, useRef, useEffect } from 'react';
+import MenuList from './menu-list';
+
+import Nav from "./nav"
 
 function Button() {
   const [slide, setSlide] = useState('firstload');
@@ -9,16 +12,15 @@ function Button() {
   if (slide == "firstload") {
 
     useEffect(() => {
-      console.log('firstload');
-      console.log(ref.current);
-      console.log(ref.current.clientHeight);
+      // console.log('firstload');
+      // console.log(ref.current.clientHeight);
       setAmount(ref.current.clientHeight);
     });
 
     return (
       <>
         <button
-          className="button-styles button4plus"
+          className="button-spinner"
           onClick={() => setSlide('close')}
         >
           <span
@@ -30,31 +32,29 @@ function Button() {
         <nav
           style={{
             transform: 'translateY(-' + amount + 'px)',
-            // marginBottom: '-' + amount + 'px',
-            marginBottom: '-134px',
+            marginBottom: '-' + amount + 'px',
+            // marginBottom: '-134px',
           }}
           ref={ref}
+          className='menu__small'
         >
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ul>
+          <MenuList />
         </nav>
+
       </>
     );
   } else if (slide == "menu") {
 
     useEffect(() => {
-      console.log('menu');
-      console.log(ref.current.clientHeight);
+      // console.log('menu');
+      // console.log(ref.current.clientHeight);
       setAmount(ref.current.clientHeight);
     });
 
     return (
       <>
         <button
-          className="button-styles button4plus"
+          className="button-spinner"
           onClick={() => setSlide('close')}
         >
           <span
@@ -70,27 +70,25 @@ function Button() {
             transition: '2s ease',
           }}
           ref={ref}
+          className='menu__small'
         >
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ul>
+          <MenuList />
         </nav>
+
       </>
     );
   } else {
 
     useEffect(() => {
-      console.log('else');
-      console.log(ref.current.clientHeight);
+      // console.log('else');
+      // console.log(ref.current.clientHeight);
       setAmount(ref.current.clientHeight);
     });
 
     return (
       <>
         <button
-          className="button-styles button4plus"
+          className="button-spinner"
           onClick={() => setSlide('menu')}
         >
           <span
@@ -106,13 +104,11 @@ function Button() {
             transition: '2s ease',
           }}
           ref={ref}
+          className='menu__small'
         >
-          <ul>
-            <li>one</li>
-            <li>two</li>
-            <li>three</li>
-          </ul>
+          <MenuList />
         </nav>
+
       </>
     );
   }

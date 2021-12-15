@@ -15,9 +15,10 @@ function ThisYear() {
   );
 }
 
+/* working offline
 export function Trees() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_299275392_Preview.jpg" alt="painted trees" className="trees" />
-}
+} */
 
 
 const Footer = () => {
@@ -76,7 +77,7 @@ const Footer = () => {
 
         <div>
           <Nav />
-          <Trees />
+          {/* <Trees /> */}
         </div>
 
 

@@ -5,6 +5,14 @@ body {
   }
 }
 
+.menu__small {
+  background: peachpuff;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: darkblue; // 📣 test
+  }
+}
+
 .large_menu {
   background-color: ghostwhite;
 

@@ -1,22 +1,23 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Header, { Cartoon } from '../components/header'
+import Header from '../components/header'
 import Footer from '../components/footer'
 
-// import "../styles/app.scss";
+import "../styles/app.scss";
 import Seo from "../components/seo";
 
 import SqueegeeSVG from '../images/squeegee'
 import CleanerSVG from '../images/cleaner'
 
-export function Squeegee() {
+/*working offline
+ export function Squeegee() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_310857864_Preview.jpeg" alt="line drawing of a window cleaner" className="squeegee" />
 }
 
 export function Cozy() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_233578526_Preview.jpeg" alt="cozy afternboon in tahoe with clean windows" className="cozy" />
-}
+} */
 
 
 const IndexPage = () => {
@@ -51,11 +52,10 @@ const IndexPage = () => {
 
             </section>
           </div>
-          {/* <hr className="one-three" /> */}
         </article>
 
         <div className="sidekick">
-          <Cozy />
+          {/* <Cozy /> working offline */}
           <blockquote>
             <h3>A wonderful window cleaning service! Efficient, professional and reasonable. We’ve used them for years.</h3>
             <q cite="https://www.yelp.com/biz/semmens-jarrod-window-cleaning-tahoe-city">Jeff P - Yelp</q>
