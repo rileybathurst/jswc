@@ -7,20 +7,14 @@ import Nav from "./nav"
 import Logo from "../images/logo"
 import Button from './button'
 
-/* working offline
 export function Forrest() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/adam-vradenburg-_gu7E90QChU-unsplash-compressed.jpg" alt="forrest image" className="forrest" />
-} */
+}
+// 📣 I cant remeber if I need to load this twice or that was just working
 
-/* working offline
 export function Cartoon() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_32749018_Preview-transparent.png" alt="cartoon window cleaner" className="cartoon" />
-} */
-
-export function Cartoon() {
-  return <StaticImage src="../images/test.jpg" alt="cartoon window cleaner" className="cartoon" />
 }
-
 
 const Header = () => {
   return (
@@ -37,11 +31,11 @@ const Header = () => {
 
       <h1 className="sr-only"><Link to="/">Jarrod Semmens Window Cleaning</Link></h1>
       <header>
-        {/* <Forrest /> */}
+        <Forrest />{/* full width */}
 
         <div className="header__container">
-          {/* <Forrest /> */}
-          {/* <Logo /> */}
+          {/* <Forrest /> */}{/* skinny */}
+          <Logo />
 
           {/* <SmallMenu /> */}
           <Button />
