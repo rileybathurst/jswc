@@ -138,7 +138,7 @@ header {
     z-index: 4;
 
     @media (min-width: $pad) {
-      width: 9rem;
+      width: 10rem; // guess and check
     }
   }
 

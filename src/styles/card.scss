@@ -7,25 +7,39 @@
   max-width: 42rem; // guess and check
 }
 
+.squeegee__outline {
+  opacity: 0.5;
+  background-color: pink;
+  float: right;
+  shape-outside: polygon(var(--squeegee)); // guess and check */
+  clip-path: polygon(var(--squeegee)); // guess and check */
+  // height: react makes this the height of the box? or the text
+  aspect-ratio: 1/2; // guess and check
+  margin-block-start: 4rem;
+  // min-width: 15rem; // guess and check
+  height: 10rem;
+
+  // @media (min-width: $pad) {
+  // aspect-ratio: 1 / 4; // guess and check
+  // margin-block-start: 0;
+  // side: polygon(var(--squeegee--pad)); // guess and check */
+  // clip-path: polygon(var(--squeegee--pad)); // guess and check */
+  // }
+}
+
 .squeegee {
   float: right;
   width: 10rem;
-  shape-outside: polygon(
-    -0 23px,
-    100% 7.31%,
-    103.35% 90.91%,
-    44.83% 90.83%,
-    53.84% 184px,
-    -0.64% 37.32%,
-    16.03% 23.75%
-  ); // guess and check
   place-self: end;
   transform: scaleX(-1); // I know this is only one but use it for now
 }
 
-.hero {
+.hero__wrapper {
   margin-block-end: 3rem; // 48px
+  border-block-end: 1px solid black;
+}
 
+.hero {
   width: 100%;
   max-width: var(--caliber);
   margin-inline: auto;
@@ -34,6 +48,28 @@
 
   @media (min-width: $pad) {
     padding-inline: 0.8rem;
+  }
+
+  > * {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .squeegee {
+    align-self: end;
+    border-block-end: 1px solid gray;
+    margin-block-end: -1px;
+    z-index: 1;
+    position: relative;
+    mix-blend-mode: normal;
+
+    svg {
+      margin-block: -6px; // guess and check
+    }
+  }
+
+  .card-content {
+    margin-block-end: 3rem;
   }
 }
 

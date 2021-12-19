@@ -3,11 +3,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+import Hero from '../components/hero'
 
 import "../styles/app.scss";
 import Seo from "../components/seo";
 
-import SqueegeeSVG from '../images/squeegee'
 import CleanerSVG from '../images/cleaner'
 
 export function Cozy() {
@@ -26,20 +26,9 @@ const IndexPage = () => {
       <main className="page-styles">
         <h2 className="page-title"><a href="tel:5305811987">Call Today For A Free Estimate! (530) 581-1987</a></h2>
 
-        <article className="hero">
-          <SqueegeeSVG />
-          <div className="card-content">
-            <h2>Providing Year Round Service</h2>
-            <p>
-              We’re your local number one source in Window Cleaning in Tahoe City and surrounding areas.
-              Besides window cleaning, we offer gutter cleaning, screen repair and winter snow shoveling.
-              We are locally owned and operated company and our passion is about helping others achieve their window cleaning needs.
-              We have been in business since 1987 and proud of our continuous growth.
-              Our philosophy is simple: We believe that by providing and excellent service for an affordable price we will have you as a customer for life…
-              Call today for a FREE estimate!
-            </p>
-          </div>
-        </article>
+        <div className="hero__wrapper">
+          <Hero />
+        </div>
 
         <div className="sidekick">
           <Cozy />
