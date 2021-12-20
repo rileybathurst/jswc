@@ -11,7 +11,7 @@ import Seo from "../components/seo";
 import CleanerSVG from '../images/cleaner'
 
 export function Cozy() {
-  return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_233578526_Preview.jpeg" alt="cozy afternboon in tahoe with clean windows" className="cozy" />
+  return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_233578526_Preview.jpeg" alt="a woman sitting in a blanket on a cozy afternoon in tahoe with clean windows" className="cozy" />
 }
 
 
