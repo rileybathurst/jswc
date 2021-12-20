@@ -34,7 +34,7 @@ const Header = () => {
         <Forrest />{/* full width */}
 
         <div className="header__container">
-          {/* <Forrest /> */}{/* skinny */}
+          <Forrest />
           <Logo />
 
           {/* <SmallMenu /> */}

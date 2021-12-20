@@ -7,10 +7,6 @@ $pad: 30rem;
 :root {
   --caliber: 50rem;
 
-  --lake: hsl(202, 100%, 37%);
-  --lake-hs: 202, 100%;
-  --lake-l: 37%;
-
   --pine: hsl(138, 76%, 23%);
   --pine-hs: 138, 76%;
   --pine-l: 23%;
@@ -44,15 +40,4 @@ $pad: 30rem;
 
   // border-radius
   --bend: 0.75rem; // 12px
-
-  --squeegee: 6rem 0, 100% 0, 100% 100%, 50% 100%, 6rem 33%, 15% 25%;
-  --squeegee--pad: 0 0, 100% 0, 100% 100%, 50% 100%, 0 33%, 15% 25%;
-
-  // doing some simple testing
-  --squeegee: 0 0, 100% 0, 100% 100%;
-  --squeegee: 0 calc(100% - 6rem), 100% calc(100% - 6rem), 100% 100%,
-    25% calc(100% - 1.5rem), 50% calc(100% - 3rem);
-
-  --squeegee: 0 0, 100% 0, 100% 100%, 100% 100%, 25% calc(100% - 1.5rem),
-    50% calc(100% - 3rem);
 }

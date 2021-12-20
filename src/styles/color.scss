@@ -1,15 +1,15 @@
 body {
   @media (prefers-color-scheme: dark) {
-    background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 27%));
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 19%));
     color: ghostwhite;
   }
 }
 
 .menu__small {
-  background: peachpuff;
+  // background: peachpuff;
 
   @media (prefers-color-scheme: dark) {
-    background-color: darkblue; // 📣 test
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 13%));
   }
 }
 
@@ -17,22 +17,22 @@ body {
   background-color: ghostwhite;
 
   @media (prefers-color-scheme: dark) {
-    background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 27%));
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 18%));
   }
 
   a {
     @media (prefers-color-scheme: dark) {
-      background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+      background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 22%));
       color: whitesmoke;
     }
   }
 }
 
-.card-content {
+.hero__background {
   background-color: var(--mercury);
 
   @media (prefers-color-scheme: dark) {
-    background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 22%));
   }
 }
 
@@ -41,7 +41,7 @@ body {
     background-color: var(--mercury);
 
     @media (prefers-color-scheme: dark) {
-      background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
+      background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 15%));
     }
   }
 }
@@ -52,8 +52,8 @@ header {
     border: 2px solid whitesmoke;
 
     @media (prefers-color-scheme: dark) {
-      background-color: hsl(var(--lake-hs), calc(var(--lake-l) - 22%));
-      border: 2px solid hsl(var(--lake-hs), calc(var(--lake-l) - 27%));
+      background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 22%));
+      border: 2px solid hsl(var(--pine-hs), calc(var(--pine-l) - 27%));
     }
   }
 }
