@@ -37,3 +37,9 @@ svg {
 /* .tahoe-svg svg {
   fill: pink; // test
 } */
+
+.trees {
+  @media (prefers-color-scheme: dark) {
+    mix-blend-mode: multiply;
+  }
+}
