@@ -4,13 +4,13 @@
 npm start
 ```
 
-[https://github.com/rileybathurst/jswc](Github)
+[GitHub](https://github.com/rileybathurst/jswc)
 
 Simple and efficient site to get the info through.
 
 ## Sizing based on Tahoe Peaks
 
-[https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_peaks](Wiki Tahoe Peaks)
+[Wiki Tahoe Peaks](https://en.wikipedia.org/wiki/List_of_Lake_Tahoe_peaks)
 
 ### Shape outside the svg
 

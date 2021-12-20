@@ -116,7 +116,7 @@
     padding: 1rem;
     z-index: 1;
     position: relative;
-    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 16%));
+    background-color: var(--mercury);
     max-width: 85vw;
     margin-inline: auto;
     border-radius: 0.75rem;
@@ -125,6 +125,10 @@
       grid-row: 1;
       grid-column: 3;
       max-width: auto;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 16%));
     }
   }
 
