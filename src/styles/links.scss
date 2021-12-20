@@ -1,4 +1,3 @@
-
 a {
   color: var(--pine);
   @media (prefers-color-scheme: dark) {
@@ -30,7 +29,14 @@ button {
   font-size: var(--stevens);
   font-family: "fieldwork", sans-serif;
   font-weight: 400;
-  box-shadow:  
-    0 3px 6px hsla(0, 0%, 0%, 0.12),
-    0 2px 4px hsla(0, 0%, 0%, 0.10);
+  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.12), 0 2px 4px hsla(0, 0%, 0%, 0.1);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--lead);
+    box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.92), 0 2px 4px hsla(0, 0%, 0%, 0.9);
+    color: var(--mercury);
+    border-color: var(--tungsten);
+    border-top: 2px solid var(--tungsten) !important; // this shouldnt be needed
+    border-bottom: 2px solid var(--tungsten) !important; // :this shouldnt be needed
+  }
 }

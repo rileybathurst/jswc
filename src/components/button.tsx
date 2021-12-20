@@ -24,7 +24,9 @@ function Button() {
           onClick={() => setSlide('close')}
         >
           <span
-            style={{ transform: 'translateY(-2rem)' }}
+            style={{
+              transform: 'translateY(-2rem)',
+            }}
             className="span-styles"
           >close<br />menu
           </span>
