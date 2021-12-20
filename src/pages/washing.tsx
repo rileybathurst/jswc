@@ -12,18 +12,17 @@ const WashingPage = () => {
         title="Window Washing"
       />
       <Header />
-      <main>
+      <main className="page-styles">
 
+        <h3 className="page-title">
+          <a href="tel:5305811987">
+            Call Today For A Free Estimate! (530) 581-1987
+          </a>
+        </h3>
         <article className="triad">
-          <h2><a href="tel:5305811987">
-            Call Today<br />
-            For A<br />
-            Free Estimate!<br />
-            (530) 581-1987</a>
-          </h2>
 
-          <section className="two-three">
-            <h2>Window<br />Washing</h2>
+          <section className="one-two">
+            <h2>Window Washing</h2>
             <p>
               A quick, easy way to get your home cleaning project started is to contact the team at Jarrod Semmens Window Cleaning to request an  estimate for a Tahoe City, CA, window cleaner.
               Letting us clean away the grime from your windows on a regular basis can enhance the interior and exterior appearance of your home or office.

@@ -11,14 +11,12 @@ $pad: 30rem;
   --pine-hs: 138, 76%;
   --pine-l: 23%;
 
-  // tahoe peaks for typorgraphic scale
-  --freel: 2.5rem; // 40px
-  --jobs: 2.0625rem; // 33px
-  --rose: 1.75rem; // 28px
-  --houghton: 1.4375rem; // 23px
-  --relay: 1.1875rem; // 19px
-  --stevens: 1rem; // 16px
-  --tamarack: 0.8125rem; // 13px
+  --sunshine: hsl(39, 83%, 84%);
+  --sunshine-hsl: 39, 83%, 84%; // needed for hsla
+
+  --sunset: hsl(39, 36%, 40%);
+
+  --almost-black: hsl(0, 0%, 5%);
 
   // apple pencils
   --lead: hsl(0, 0%, 10%);
@@ -31,6 +29,15 @@ $pad: 30rem;
   --silver: hsl(0, 0%, 80%);
   --mercury: hsl(0, 0%, 90%);
 
+  // tahoe peaks for typorgraphic scale
+  --freel: 2.5rem; // 40px
+  --jobs: 2.0625rem; // 33px
+  --rose: 1.75rem; // 28px
+  --houghton: 1.4375rem; // 23px
+  --relay: 1.1875rem; // 19px
+  --stevens: 1rem; // 16px
+  --tamarack: 0.8125rem; // 13px
+
   // forest layers for z-index
   // https://en.wikipedia.org/wiki/Forest
   --floor: 1;
@@ -40,4 +47,28 @@ $pad: 30rem;
 
   // border-radius
   --bend: 0.75rem; // 12px
+
+  // hover timing
+  --hover-timing: 0.5s ease-in-out;
+
+  // shadows
+  // based on the layers of the atomposhere
+  // https://en.wikipedia.org/wiki/Atmosphere_of_Earth
+  --mesosphere: 0 5px 12px hsla(0, 0%, 0%, 0.4),
+    0 18px 32px hsla(0, 0%, 0%, 0.16);
+  --stratosphere: 0 2px 3px hsla(0, 0%, 0%, 0.12),
+    0 3px 6px hsla(0, 0%, 0%, 0.14);
+  --troposphere: 0 2px 3px hsla(0, 0%, 0%, 0.12),
+    0 3px 6px hsla(0, 0%, 0%, 0.14);
+
+  // its kinda like rhythm but horizontal
+  --cadence: 0.75rem; // 12px
 }
+
+// as a note which css colors am I using
+/*
+ghostwhite as 95% white
+
+
+
+*/

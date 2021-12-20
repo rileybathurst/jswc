@@ -15,12 +15,17 @@ a:hover {
 .large_menu a {
   padding: 0.5rem;
   border-radius: 0.25rem;
-  transition: 0.5s ease-in-out;
+  transition: var(--hover-timing);
   text-decoration: none;
 }
 
 .large_menu a:hover {
   text-decoration: underline;
+  background-color: var(--silver);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 13%));
+  }
 }
 
 button {
@@ -29,14 +34,69 @@ button {
   font-size: var(--stevens);
   font-family: "fieldwork", sans-serif;
   font-weight: 400;
-  box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.12), 0 2px 4px hsla(0, 0%, 0%, 0.1);
+  box-shadow: var(--troposphere);
 
   @media (prefers-color-scheme: dark) {
     background-color: var(--lead);
-    box-shadow: 0 3px 6px hsla(0, 0%, 0%, 0.92), 0 2px 4px hsla(0, 0%, 0%, 0.9);
+    box-shadow: var(--stratosphere);
     color: var(--mercury);
     border-color: var(--tungsten);
     border-top: 2px solid var(--tungsten) !important; // this shouldnt be needed
     border-bottom: 2px solid var(--tungsten) !important; // :this shouldnt be needed
+  }
+}
+
+header svg {
+  padding: 0.8rem;
+  border-radius: var(--bend);
+  transition: var(--hover-timing);
+}
+
+header svg:where(:hover, :focus) {
+  background-color: rgba(0, 0, 0, 0.5); // 📣
+}
+
+.page-title a {
+  padding: 0.8rem;
+  transition: var(--hover-timing);
+  border-radius: var(--bend);
+}
+
+.page-title a:where(:hover, :focus) {
+  background-color: var(--mercury);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 16%));
+  }
+}
+
+.footer__list a {
+  padding: 0.8rem;
+  border-radius: var(--bend);
+  transition: var(--hover-timing);
+}
+
+.footer__list a:where(:hover, :focus) {
+  background-color: var(--mercury);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 16%));
+  }
+}
+
+.yelp__link:where(:hover, :focus) {
+  background-color: transparent !important; // overwrite this is maybe fixeable
+}
+
+.yelp__link svg {
+  border-radius: var(--bend);
+  transition: var(--hover-timing);
+}
+
+.yelp__link svg:where(:hover, :focus) {
+  background-color: var(--mercury);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 13%));
   }
 }

@@ -84,3 +84,18 @@ blockquote {
 address {
   line-height: 1.5;
 }
+
+.br__pad {
+  display: none;
+  @media (min-width: $pad) {
+    display: initial;
+  }
+}
+
+.longline {
+  font-size: clamp(
+    0.875rem,
+    1.667vw,
+    1rem
+  ); // 14px and up? the email is just really long so trying to make it fit without it being too obvious
+}

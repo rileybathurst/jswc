@@ -1,4 +1,6 @@
 body {
+  color: var(--almost-black);
+
   @media (prefers-color-scheme: dark) {
     background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 19%));
     color: ghostwhite;
@@ -6,7 +8,8 @@ body {
 }
 
 .menu__small {
-  // background: peachpuff;
+  background-color: whitesmoke;
+  box-shadow: var(--troposphere);
 
   @media (prefers-color-scheme: dark) {
     background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 13%));
@@ -15,6 +18,7 @@ body {
 
 .large_menu {
   background-color: ghostwhite;
+  box-shadow: var(--troposphere);
 
   @media (prefers-color-scheme: dark) {
     background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 18%));
@@ -28,17 +32,9 @@ body {
   }
 }
 
-.hero__background {
-  background-color: var(--mercury);
-
-  @media (prefers-color-scheme: dark) {
-    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 22%));
-  }
-}
-
 .sidekick {
   article {
-    background-color: var(--mercury);
+    background-color: ghostwhite;
 
     @media (prefers-color-scheme: dark) {
       background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 15%));
@@ -47,6 +43,10 @@ body {
 }
 
 header {
+  .header__logo svg {
+    fill: white;
+  }
+
   .cartoon {
     background-color: palegoldenrod;
     border: 2px solid whitesmoke;

@@ -7,10 +7,10 @@ import Nav from "./nav"
 import Logo from "../images/logo"
 import Button from './button'
 
+// this is purposley loaded twice I dont know if I can fix that with layers etc
 export function Forrest() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/adam-vradenburg-_gu7E90QChU-unsplash-compressed.jpg" alt="forrest image" className="forrest" />
 }
-// 📣 I cant remeber if I need to load this twice or that was just working
 
 export function Cartoon() {
   return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_32749018_Preview-transparent.png" alt="cartoon window cleaner" className="cartoon" />
@@ -25,7 +25,7 @@ const Header = () => {
         <link
           rel="stylesheet"
           href="https://use.typekit.net/vpi7tts.css"
-        // crossorigin="use-credentials"
+        // crossorigin="use-credentials" // 📣 this has an issue either on or off
         />
       </Helmet>
 
@@ -35,7 +35,8 @@ const Header = () => {
 
         <div className="header__container">
           <Forrest />
-          <Logo />
+          {/* <Logo /> */}
+          <Link to='/' className="header__logo" title='Jarrod Semmens Window Cleaning'><Logo /></Link>
 
           {/* <SmallMenu /> */}
           <Button />

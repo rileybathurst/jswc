@@ -2,7 +2,7 @@
 } */
 
 .card-content {
-  padding: 0.8rem;
+  padding: var(--cadence);
   border-radius: 0.75rem;
   // max-width: 42rem; // guess and check
 }
@@ -16,7 +16,7 @@
 
 .hero__wrapper {
   margin-block-end: 3rem; // 48px
-  border-block-end: 1px solid black;
+  border-block-end: 1px solid var(--lead);
 
   @media (prefers-color-scheme: dark) {
     border-color: white;
@@ -31,22 +31,12 @@
   align-items: end;
 
   @media (min-width: $pad) {
-    padding-inline: 0.8rem;
+    padding-inline: var(--cadence);
   }
 
   > * {
     grid-row: 1;
     grid-column: 1;
-  }
-
-  .hero__background {
-    width: 100%;
-    height: 100%;
-
-    @media (min-width: $pad) {
-      grid-column: 1/3;
-      width: calc(100% - 4rem);
-    }
   }
 
   .squeegee__outline {
@@ -72,14 +62,6 @@
       }
     }
   }
-
-  .hero__background {
-    // margin-block-end: -1rem;
-
-    @media (min-width: $pad) {
-      margin-block-end: 1rem;
-    }
-  }
 }
 
 // named secondary to hero
@@ -87,7 +69,7 @@
   max-width: 60rem;
   margin-inline: auto;
 
-  grid-template-rows: 10rem auto auto auto;
+  grid-template-rows: 8rem auto auto auto; // guess and check
 
   display: grid;
   @media (min-width: $pad) {
@@ -103,6 +85,7 @@
     grid-column: 1;
     border-radius: 0.75rem;
     transform: scaleX(-1);
+    box-shadow: var(--troposphere);
 
     @media (min-width: $pad) {
       grid-row: 1/3;
@@ -116,14 +99,15 @@
     padding: 1rem;
     z-index: 1;
     position: relative;
-    background-color: var(--mercury);
+    background-color: ghostwhite;
     max-width: 85vw;
     margin-inline: auto;
     border-radius: 0.75rem;
+    box-shadow: var(--troposphere);
 
     @media (min-width: $pad) {
       grid-row: 1;
-      grid-column: 3;
+      grid-column: 2/4;
       max-width: auto;
     }
 
@@ -135,16 +119,16 @@
   article {
     grid-row: 3;
     grid-column: 1;
-    border-radius: 0.75rem;
+    border-radius: var(--bend);
     z-index: 1;
     padding: 1rem;
-    // max-width: var(--caliber);
-    padding-inline: 0.8rem;
+    padding-inline: var(--cadence);
+    box-shadow: var(--troposphere);
 
     @media (min-width: $pad) {
       grid-row: 2/4;
       grid-column: 2/4;
-      padding-inline-start: 4rem;
+      padding-inline-start: 4rem; // 📣
     }
   }
 
@@ -158,7 +142,7 @@
     @media (min-width: $pad) {
       grid-row: 3/5;
       grid-column: 1/3;
-      margin-block-start: 1.6rem;
+      margin-block-start: calc(var(--cadence) * 2);
     }
   }
 }
