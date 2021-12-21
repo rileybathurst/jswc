@@ -27,9 +27,9 @@ const IndexPage = () => {
         <h2 className="page-title"><a href="tel:5305811987">Call Today For A Free Estimate! (530) 581-1987</a></h2>
 
         <div className="hero__wrapper">
-          <div className="hero__wrapper--start">a{/* stay gold */}</div>
+          <div className="hero__wrapper--start">{/* stay gold */}</div>
           <Hero />
-          <div className="hero__wrapper--end">b{/* stay gold */}</div>
+          <div className="hero__wrapper--end">{/* stay gold */}</div>
         </div>
 
         <div className="cleaner__wrapper">

@@ -16,23 +16,29 @@
 
 .hero__wrapper {
   margin-block-end: 3rem; // 48px
-  border-block-end: 1px solid var(--lead);
+  // border-block-end: 1px solid var(--lead);
 
   @media (prefers-color-scheme: dark) {
     border-color: white;
   }
 
   //testing
-  background-color: peachpuff;
-  display: flex;
-  align-items: stretch;
-  align-content: stretch;
+  // background-color: peachpuff;
+  display: grid;
+  width: 100vw;
+  @media (min-width: 52rem) {
+    grid-template-columns: auto 50rem auto;
+  }
+
+  > * {
+    grid-row: 1;
+  }
 
   .hero__wrapper--start,
   .hero__wrapper--end {
     @media (min-width: 52rem) {
-      background-color: plum;
-      width: 10rem;
+      // background-color: plum;
+      border-bottom: 1px solid var(--lead);
     }
   }
 }
@@ -46,6 +52,10 @@
 
   @media (min-width: $pad) {
     padding-inline: var(--cadence);
+  }
+
+  @media (min-width: 52rem) {
+    padding-inline: 0;
   }
 
   > * {
@@ -75,6 +85,12 @@
         stroke-width: 2px;
       }
     }
+  }
+
+  .squeegee__line {
+    width: calc(100% - 10rem);
+    height: 100%;
+    border-bottom: 1px solid var(--lead);
   }
 }
 

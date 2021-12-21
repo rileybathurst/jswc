@@ -34,6 +34,7 @@ function Clip() {
         </div>
       </div>
       <SqueegeeSVG />
+      <div className='squeegee__line'>{/* stay gold */}</div>
     </>
   );
 }
