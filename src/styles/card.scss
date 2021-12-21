@@ -21,6 +21,20 @@
   @media (prefers-color-scheme: dark) {
     border-color: white;
   }
+
+  //testing
+  background-color: peachpuff;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+
+  .hero__wrapper--start,
+  .hero__wrapper--end {
+    @media (min-width: 52rem) {
+      background-color: plum;
+      width: 10rem;
+    }
+  }
 }
 
 .hero {
@@ -142,7 +156,39 @@
     @media (min-width: $pad) {
       grid-row: 3/5;
       grid-column: 1/3;
-      margin-block-start: calc(var(--cadence) * 2);
+      margin-block-start: 1.5rem;
+    }
+  }
+}
+
+.cleaner__wrapper {
+  display: grid;
+  border-block-end: 1px solid var(--almost-black);
+
+  @media (prefers-color-scheme: dark) {
+    border-color: whitesmoke;
+  }
+
+  > * {
+    @media (min-width: $pad) {
+      grid-row: 1;
+      grid-column: 1;
+    }
+  }
+
+  .cleaner {
+    align-self: end;
+    justify-self: center;
+    z-index: 1;
+    position: relative;
+    margin-inline-end: calc(var(--cadence) * 10);
+    margin-block-start: -1rem;
+    margin-block-end: -0.6rem;
+  }
+
+  .sidekick {
+    @media (min-width: $pad) {
+      margin-block-end: 3rem;
     }
   }
 }

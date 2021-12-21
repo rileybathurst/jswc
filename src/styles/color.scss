@@ -44,11 +44,11 @@ body {
 
 header {
   .header__logo svg {
-    fill: white;
+    fill: whitesmoke;
   }
 
   .cartoon {
-    background-color: palegoldenrod;
+    background-color: var(--sunshine);
     border: 2px solid whitesmoke;
 
     @media (prefers-color-scheme: dark) {
@@ -70,18 +70,18 @@ header {
 .footer__stripe {
   @supports not (background-color: lch(95% 22 88)) {
     // move this all to variables
-    background-color: lch(95% 22 88);
+    background-color: lch(95% 22 88); // 📣
   }
-  background-color: rgb(99% 93% 78%);
-  border-top: 1px solid rgb(103% 74% 18%);
-  border-bottom: 1px solid rgb(103% 74% 18%);
+  background-color: rgb(99% 93% 78%); // 📣
+  border-top: 1px solid rgb(103% 74% 18%); // 📣
+  border-bottom: 1px solid rgb(103% 74% 18%); // 📣
 
   @media (prefers-color-scheme: dark) {
     @supports not (background-color: lch(95% 22 88)) {
-      background-color: lch(17% 22 79);
+      background-color: lch(17% 22 79); // 📣
     }
-    background-color: rgb(21% 15% 2%);
-    border-top: 1px solid rgb(103% 74% 18%);
-    border-bottom: 1px solid rgb(103% 74% 18%);
+    background-color: rgb(21% 15% 2%); // 📣
+    border-top: 1px solid rgb(103% 74% 18%); // 📣
+    border-bottom: 1px solid rgb(103% 74% 18%); // 📣
   }
 }

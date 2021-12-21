@@ -17,6 +17,11 @@ a:hover {
   border-radius: 0.25rem;
   transition: var(--hover-timing);
   text-decoration: none;
+  color: hsl(var(--pine-hs), calc(var(--pine-l) - 5%));
+
+  @media (prefers-color-scheme: dark) {
+    color: whitesmoke;
+  }
 }
 
 .large_menu a:hover {

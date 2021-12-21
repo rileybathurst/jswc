@@ -27,28 +27,32 @@ const IndexPage = () => {
         <h2 className="page-title"><a href="tel:5305811987">Call Today For A Free Estimate! (530) 581-1987</a></h2>
 
         <div className="hero__wrapper">
+          <div className="hero__wrapper--start">a{/* stay gold */}</div>
           <Hero />
+          <div className="hero__wrapper--end">b{/* stay gold */}</div>
         </div>
 
-        <div className="sidekick">
-          <Cozy />
-          <blockquote>
-            <h3>A wonderful window cleaning service! Efficient, professional and reasonable. We’ve used them for years.</h3>
-            <q cite="https://www.yelp.com/biz/semmens-jarrod-window-cleaning-tahoe-city">Jeff P - Yelp</q>
-          </blockquote>
+        <div className="cleaner__wrapper">
+          <div className="sidekick">
+            <Cozy />
+            <blockquote>
+              <h3>A wonderful window cleaning service! Efficient, professional and reasonable. We’ve used them for years.</h3>
+              <q cite="https://www.yelp.com/biz/semmens-jarrod-window-cleaning-tahoe-city">Jeff P - Yelp</q>
+            </blockquote>
 
-          <article className="triad">
-            <section className="one-two">
-              <h2>Quality Service &amp; Affordable Prices</h2>
-              <p>Jarrod Semmens Window Cleaning’s mission has always been to provide our customers with quality services as well as fair, competitive prices in a timely &amp; courteous manner.
-                This is the reason for our success today.
-                We guarantee our work and we never leave our customer unsatisfied.
-                We carry full liability insurance and our employees are bonded.
-                All of Jarrod Semmens Window Cleaning employees are well-trained, experienced professionals.
-                We do offer Free Phone and On-Site Estimates and Weekend-Service.
-                No job is too small or too big for Jarrod Semmens Window Cleaning.</p>
-            </section>
-          </article>
+            <article className="triad">
+              <section className="one-two">
+                <h2>Quality Service &amp; Affordable Prices</h2>
+                <p>Jarrod Semmens Window Cleaning’s mission has always been to provide our customers with quality services as well as fair, competitive prices in a timely &amp; courteous manner.
+                  This is the reason for our success today.
+                  We guarantee our work and we never leave our customer unsatisfied.
+                  We carry full liability insurance and our employees are bonded.
+                  All of Jarrod Semmens Window Cleaning employees are well-trained, experienced professionals.
+                  We do offer Free Phone and On-Site Estimates and Weekend-Service.
+                  No job is too small or too big for Jarrod Semmens Window Cleaning.</p>
+              </section>
+            </article>
+          </div>
 
           <CleanerSVG />
         </div>
