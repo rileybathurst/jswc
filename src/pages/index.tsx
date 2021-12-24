@@ -28,7 +28,7 @@ const IndexPage = () => {
 
         <div className="hero__wrapper">
           <div className="hero__wrapper--start">{/* stay gold */}</div>
-          <Hero />
+          {/* <Hero /> */}
           <div className="hero__wrapper--end">{/* stay gold */}</div>
         </div>
 
