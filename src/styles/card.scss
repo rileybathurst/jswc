@@ -39,6 +39,10 @@
     @media (min-width: 52rem) {
       // background-color: plum;
       border-bottom: 1px solid var(--lead);
+
+      @media (prefers-color-scheme: dark) {
+        border-color: whitesmoke;
+      }
     }
   }
 }
@@ -91,6 +95,10 @@
     width: calc(100% - 9.75rem); // guess and check
     height: 100%;
     border-bottom: 1px solid var(--lead);
+
+    @media (prefers-color-scheme: dark) {
+      border-color: whitesmoke;
+    }
   }
 }
 
