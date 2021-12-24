@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import TahoeSvg from "../images/tahoe"
+import TreelinesSVG from "../images/tree-lines"
 
 import Nav from "./nav"
 
@@ -83,7 +84,8 @@ const Footer = () => {
 
         <div>
           <Nav />
-          <Trees />
+          {/* <Trees /> */}
+          <TreelinesSVG />
         </div>
       </div>
 

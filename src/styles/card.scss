@@ -75,20 +75,20 @@
   }
 
   .squeegee {
-    margin-block-end: -1px;
+    margin-block-end: 0.5px; // guess and check
 
     svg {
       margin-block: -6px; // guess and check
       stroke-width: 4px;
 
       @media (min-width: $pad) {
-        stroke-width: 2px;
+        stroke-width: 4px;
       }
     }
   }
 
   .squeegee__line {
-    width: calc(100% - 10rem);
+    width: calc(100% - 9.75rem); // guess and check
     height: 100%;
     border-bottom: 1px solid var(--lead);
   }

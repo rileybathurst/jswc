@@ -43,3 +43,13 @@ svg {
     mix-blend-mode: multiply;
   }
 }
+
+.tree-lines {
+  svg {
+    max-width: 10rem;
+    max-height: 10rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2px;
+  }
+}
