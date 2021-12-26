@@ -10,6 +10,7 @@ const WashingPage = () => {
     <>
       <Seo
         title="Window Washing"
+        description="Letting us clean away the grime from your windows on a regular basis can enhance the interior and exterior appearance of your home or office."
       />
       <Header />
       <main className="page-styles">

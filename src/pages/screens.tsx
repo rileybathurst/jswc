@@ -10,6 +10,7 @@ const ScreenPage = () => {
     <>
       <Seo
         title="Broken Screen Replacement"
+        description="Are your window screens damaged, missing, dented, or broken? Have  they become so clogged with grime and debris that they’re making your  windows look unsightly."
       />
       <Header />
       <main className="page-styles">

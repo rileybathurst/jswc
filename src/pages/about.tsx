@@ -11,6 +11,7 @@ const AboutPage = () => {
 
       <Seo
         title="About Us"
+        description="From our high-quality, professional staff to our effective cleaning techniques, you’ll get the satisfaction of gleaming, sparkling results  from a locally owned and operated company."
       />
 
       <Header />

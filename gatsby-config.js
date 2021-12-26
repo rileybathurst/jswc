@@ -4,12 +4,7 @@ module.exports = {
     siteUrl: "https://www.jarrodsemmenswindowcleaning.com",
     url: "https://www.jarrodsemmenswindowcleaning.com", // No trailing slash allowed!
     description: "Jarrod Semmens Window Cleaning can supply you with a thorough washing of your windows inside and out. From our high-quality, professional staff to our effective cleaning techniques, you'll get the satisfaction of gleaming, sparkling results from a locally owned and operated company.",
-
-    // logo: '/images/icon.png',
-    // image: 'https://ebpt.s3-us-west-1.amazonaws.com/images/emerald-bay-pt-og_image.jpg', // Path to your image you placed in the 'static' folder
-    // ogImage: 'https://ebpt.s3-us-west-1.amazonaws.com/images/emerald_bay_physical_therapy-og_image.jpg',
-    // twitterImage: 'https://ebpt.s3-us-west-1.amazonaws.com/images/emerald_bay_physical_therapy-twitter_image.jpg',
-
+    image: 'https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/jswc-og_image.jpg',
     openingHours: 'Mo, Tu, We, Th, Fr 09:00-17:00',
     telephone: '(530) 581-1987',
     faxNumber: '(530) 581-1981',
@@ -48,7 +43,7 @@ module.exports = {
         "postalCode": "96145",
       }
     },
-    // slogan: 'Private, safe, and effective one-on-one treatments to help you live your best life!',
+    slogan: 'We’re your local number one source in Window Cleaning in Tahoe City and surrounding areas.',
     // gsv: 't-GHhCwvq1SjOG3qV4JFNZpOo_6c5og1i1UlH_WvIOw'
   },
   plugins: [
@@ -85,7 +80,7 @@ module.exports = {
         name: "Jarrod Semmens Window Cleaning",
         short_name: `JSWC`,
         start_url: `/`,
-        theme_color: `#FFB831`,
+        theme_color: `#0e6729`,
         icon: "src/images/icon.png",
       },
     },
