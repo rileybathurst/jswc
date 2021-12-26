@@ -15,5 +15,3 @@ Simple and efficient site to get the info through.
 ### Shape outside the svg
 
 I was working on getting the text to wrap but I can't find a way to place the shape-outside to the bottom of the text. Theres a bunch of working in this saved as a branch that shouldn't be merged in.
-
-🦄
