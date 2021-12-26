@@ -99,3 +99,11 @@ address {
     1rem
   ); // 14px and up? the email is just really long so trying to make it fit without it being too obvious
 }
+
+:is(.hero, .sidekick) h2 {
+  font-size: clamp(var(--houghton), 1.667vw, var(--jobs));
+}
+
+blockquote h3 {
+  font-size: clamp(var(--houghton), 1.667vw, var(--jobs));
+}
