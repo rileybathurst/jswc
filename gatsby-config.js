@@ -81,7 +81,7 @@ module.exports = {
         short_name: `JSWC`,
         start_url: `/`,
         theme_color: `#0e6729`,
-        icon: "src/images/icon.png",
+        icon: "src/images/jarrod_semmens_window_cleaning-icon.svg",
       },
     },
   ],
