@@ -38,6 +38,7 @@
   // background-color: peachpuff;
   display: grid;
   width: 100vw;
+  width: calc(100vw - 1rem); // 📣 I dont know why
   @media (min-width: 52rem) {
     grid-template-columns: auto 50rem auto;
   }
