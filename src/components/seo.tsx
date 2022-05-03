@@ -5,12 +5,20 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
+{/* // ! this is very different than my current implementation May 2022 */ }
+
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+function Seo({
+  description,
+  lang,
+  meta,
+  title,
+  itemType
+}) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -59,13 +67,20 @@ function Seo({ description, lang, meta, title }) {
     <Helmet
       htmlAttributes={{
         lang,
+        itemType
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {
+          name: `name`,
+          content: `Jarrod Semmens Window Cleaning`,
+          itemprop: `name`
+        },
+        {
           name: `description`,
           content: metaDescription,
+          itemprop: `description`
         },
         {
           property: `og:title`,
@@ -74,6 +89,7 @@ function Seo({ description, lang, meta, title }) {
         {
           property: `og:url`,
           content: url,
+          itemprop: `url`
         },
         {
           property: `og:description`,
@@ -90,6 +106,7 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `image`,
           content: image,
+          itemprop: `image`
         },
         {
           name: `og:image`,
@@ -98,21 +115,25 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `openingHours`,
           content: openingHours,
+          itemprop: `openingHours`
         },
         {
           name: `telephone`,
           content: telephone,
+          itemprop: `telephone`
         },
         {
           name: `faxNumber`,
           content: faxNumber,
+          itemprop: `faxNumber`
         },
         {
           name: `areaServed`,
           content: areaServed,
+          itemprop: `areaServed` // TODO
         },
         {
-          name: `location`,
+          name: `location`, // TODO
           content: locationStreet +
             ", " +
             locationLocality +
@@ -124,6 +145,7 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `slogan`,
           content: slogan,
+          itemprop: `slogan`
         },
       ].concat(meta)}
     />
@@ -135,6 +157,7 @@ Seo.defaultProps = {
   meta: [],
   description: ``,
   image: ``,
+  itemType: `https://schema.org/LocalBusiness`,
 }
 
 Seo.propTypes = {
@@ -143,6 +166,7 @@ Seo.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
+  itemType: PropTypes.string
 }
 
 export default Seo
