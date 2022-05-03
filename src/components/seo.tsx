@@ -17,7 +17,8 @@ function Seo({
   lang,
   meta,
   title,
-  itemType
+  itemType,
+  itemScope
 }) {
   const { site } = useStaticQuery(
     graphql`
@@ -67,7 +68,8 @@ function Seo({
     <Helmet
       htmlAttributes={{
         lang,
-        itemType
+        itemType,
+        itemScope
       }}
       title={title}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
@@ -158,6 +160,7 @@ Seo.defaultProps = {
   description: ``,
   image: ``,
   itemType: `https://schema.org/LocalBusiness`,
+  itemScope: false,
 }
 
 Seo.propTypes = {
@@ -166,7 +169,8 @@ Seo.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  itemType: PropTypes.string
+  itemType: PropTypes.string,
+  itemScope: PropTypes.string
 }
 
 export default Seo
