@@ -1,5 +1,5 @@
 .pad__down {
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     display: none !important;
   }
 }
@@ -7,7 +7,7 @@
 .pad__up {
   display: none !important;
 
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     display: initial !important; // has to be important when the smaller is
   }
 }

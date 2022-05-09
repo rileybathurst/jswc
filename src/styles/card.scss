@@ -11,7 +11,7 @@
   grid-row: 2/4;
   grid-column: 1;
 
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     grid-row: 1;
     grid-column: 2/4;
   }
@@ -20,25 +20,25 @@
     margin-block: -7px; // guess and check
     stroke-width: 4px;
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       stroke-width: 4px;
     }
   }
 }
 
 .hero__wrapper {
+  margin-inline: var(--cadence);
   margin-block-end: 3rem; // 48px
   // border-block-end: 1px solid var(--lead);
 
-  @media (prefers-color-scheme: dark) {
-    border-color: white;
-  }
-
-  //testing
-  // background-color: peachpuff;
   display: grid;
   width: 100vw;
   width: calc(100vw - 1rem); // 📣 I dont know why
+
+  @media (prefers-color-scheme: dark) {
+    border-color: white; // TODO check this against whitesmoke
+  }
+
   @media (min-width: 52rem) {
     grid-template-columns: auto 50rem auto;
   }
@@ -57,7 +57,7 @@
         border-color: whitesmoke;
       }
 
-      @media (min-width: $pad) {
+      @media (min-width: $venus) {
         grid-row: 1;
       }
     }
@@ -76,7 +76,7 @@
     background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 15%));
   }
 
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     grid-row: 1;
     grid-column: 1/3;
     margin-block-end: 2rem;
@@ -86,16 +86,16 @@
 
 .hero {
   width: 100%;
-  max-width: var(--caliber);
+  max-width: var(--neptune);
   margin-inline: auto;
   display: grid;
   align-items: end;
 
-  @media (max-width: $pad) {
+  @media (max-width: $venus) {
     grid-template-rows: auto 2rem auto;
   }
 
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     padding-inline: var(--cadence);
   }
 
@@ -115,7 +115,7 @@
     width: 10rem;
     shape-outside: ellipse(4.5rem 8rem at 60% 80%); // guess and check
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       shape-outside: ellipse(4.5rem 8rem at 60% 66.66%); // guess and check
     }
   }
@@ -129,7 +129,7 @@
       border-color: whitesmoke;
     }
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       grid-row: 1;
       grid-column: 1;
       width: 100%; // guess and check
@@ -145,7 +145,7 @@
   grid-template-rows: 8rem auto auto auto; // guess and check
 
   display: grid;
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     grid-template-rows: auto;
     grid-template-columns: 1fr 5rem 1fr;
   }
@@ -153,14 +153,14 @@
 
   .cozy {
     aspect-ratio: 16/9;
-    max-width: var(--caliber);
+    max-width: var(--neptune);
     grid-row: 1/3;
     grid-column: 1;
     border-radius: 0.75rem;
     transform: scaleX(-1);
     box-shadow: var(--troposphere);
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       grid-row: 1/3;
       grid-column: 1/3;
     }
@@ -178,7 +178,7 @@
     border-radius: 0.75rem;
     box-shadow: var(--troposphere);
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       grid-row: 1;
       grid-column: 2/4;
       max-width: auto;
@@ -198,7 +198,7 @@
     padding-inline: var(--cadence);
     box-shadow: var(--troposphere);
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       grid-row: 2/4;
       grid-column: 2/4;
       padding-inline-start: 4rem; // 📣
@@ -212,7 +212,7 @@
     z-index: 1;
     margin-block-start: -3rem;
 
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       grid-row: 3/5;
       grid-column: 1/3;
       margin-block-start: 1.5rem;
@@ -229,7 +229,7 @@
   }
 
   > * {
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       grid-row: 1;
       grid-column: 1;
     }
@@ -246,7 +246,7 @@
   }
 
   .sidekick {
-    @media (min-width: $pad) {
+    @media (min-width: $venus) {
       margin-block-end: 3rem;
     }
   }

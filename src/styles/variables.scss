@@ -2,11 +2,34 @@
 //  #VARIABLES
 /*------------------------------------*/
 
-$pad: 30rem;
+// $pad: 30rem; // tablet width?
+// $caliber: 50rem; // thesaurus of measure
+// anything above this is running essentially full width
+
+// V2 widths
+$jupiter: 80rem;
+$saturn: 70rem;
+$uranus: 60rem;
+$neptune: 50rem;
+$earth: 40rem;
+$venus: 30rem;
+$mars: 20rem;
+$mercury: 10rem;
 
 :root {
-  --caliber: 50rem;
+  // --caliber: 50rem;
 
+  // V2 widths
+  --jupiter: 80rem;
+  --saturn: 70rem;
+  --uranus: 60rem;
+  --neptune: 50rem;
+  --earth: 40rem;
+  --venus: 30rem;
+  --mars: 20rem;
+  --mercury: 10rem;
+
+  // TODO these are not louie colors
   --pine: rgb(14, 103, 41);
   --pine-hs: 138, 76%;
   --pine-l: 23%;
@@ -64,6 +87,7 @@ $pad: 30rem;
     0 3px 6px hsla(0, 0%, 0%, 0.14);
 
   // its kinda like rhythm but horizontal
+  // TODO this needs more
   --cadence: 0.75rem; // 12px
 }
 

@@ -58,20 +58,41 @@ header svg {
 }
 
 header svg:where(:hover, :focus) {
-  background-color: rgba(0, 0, 0, 0.5); // 📣
+  background-color: rgba(0, 0, 0, 0.5); // TODO
 }
 
 .page-title a {
-  padding: 0.8rem;
+  // padding: 0.8rem;
+  padding-block: var(--cadence);
+  box-shadow: var(--cadence) 0 0 transparent,
+    calc(var(--cadence) - var(--cadence) * 2) 0 0 transparent;
   transition: var(--hover-timing);
   border-radius: var(--bend);
+  line-height: calc(var(--rose) + calc(var(--cadence) * 2));
+
+  @media (min-width: $venus) {
+    line-height: calc(var(--jobs) + calc(var(--cadence) * 2));
+  }
 }
 
 .page-title a:where(:hover, :focus) {
   background-color: var(--mercury);
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: var(--cadence) 0 0 var(--mercury),
+    calc(var(--cadence) - var(--cadence) * 2) 0 0 var(--mercury);
+  // calc( 0 - var) doesnt work
+  // this doesnt work in firefox and safari is having a minor freakout about it
+  // I could probably add some @not supported tags
 
   @media (prefers-color-scheme: dark) {
-    background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 16%));
+    background-color: hsl(
+      var(--pine-hs),
+      calc(var(--pine-l) - 16%)
+    ); // TODO this contrast is nowhere near strong enough
+    box-shadow: var(--cadence) 0 0
+        hsl(var(--pine-hs), calc(var(--pine-l) - 16%)),
+      calc(var(--cadence) - var(--cadence) * 2) 0 0
+        hsl(var(--pine-hs), calc(var(--pine-l) - 16%));
   }
 }
 

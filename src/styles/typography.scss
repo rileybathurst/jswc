@@ -39,6 +39,7 @@ h2 {
 
 h3 {
   font-size: var(--rose);
+  line-height: calc(var(--rose) * 1.5);
 }
 
 h4 {
@@ -65,7 +66,7 @@ p {
   margin-block-end: 1.6rem;
 }
 
-@media (min-width: $pad) {
+@media (min-width: $venus) {
   .end {
     text-align: right;
   }
@@ -73,7 +74,7 @@ p {
 
 blockquote {
   font-style: italic;
-  max-width: var(--caliber);
+  max-width: var(--neptune);
   margin-inline: auto;
   margin-block: 3rem;
   display: flex;
@@ -87,7 +88,7 @@ address {
 
 .br__pad {
   display: none;
-  @media (min-width: $pad) {
+  @media (min-width: $venus) {
     display: initial;
   }
 }
