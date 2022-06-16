@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "private": true,
   "description": "jarrodsemmenswindowcleaning",
-  "author": "Riley Bathurst",
+  "author": {
+    "name": "Riley Bathurst",
+    "email": "riley@rileybathurst.com",
+    "url": "https://rileybathurst.com"
+  },
+  "homepage": "https://jarrodsemmenswindowcleaning.com",
+  "repository": "github:rileybathurst/jswc",
+  "license": "MIT",
   "keywords": [
     "gatsby"
   ],
