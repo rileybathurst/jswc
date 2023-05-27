@@ -3,9 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Header from '../components/header'
 import Footer from '../components/footer'
-import Hero from '../components/hero'
-
-import "../styles/app.scss";
 import Seo from "../components/seo";
 
 import CleanerSVG from '../images/cleaner'
@@ -19,6 +16,7 @@ export function Cozy() {
 const IndexPage = () => {
   return (
     <>
+      {/* // TODO: move these to the footer */}
       <Seo
         title="Jarrod Semmens Window Cleaning"
       />
@@ -35,7 +33,7 @@ const IndexPage = () => {
               <div id="card-text">
                 <h2>Providing Year Round Service</h2>
                 <p>
-                  We’re your local number one source in Window Cleaning in Tahoe City and surrounding areas.
+                  We&apos;re your local number one source in Window Cleaning in Tahoe City and surrounding areas.
                   Besides window cleaning, we offer gutter cleaning, screen repair and winter snow shoveling.
                   We are locally owned and operated company and our passion is about helping others achieve their window cleaning needs.
                   We have been in business since 1987 and proud of our continuous growth.

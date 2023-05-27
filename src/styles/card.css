@@ -1,26 +1,25 @@
-/* .card {
-} */
-
 .card-content {
   padding: var(--cadence);
   margin-block-end: 2rem;
 }
 
 .squeegee {
-  transform: scaleX(-1); // I know this is only one but use it for now
+  /* TODO: I know this is only one but use it for now */
+  transform: scaleX(-1);
   grid-row: 2/4;
   grid-column: 1;
 
-  @media (min-width: $venus) {
+  @media (min-width: 30rem) {
     grid-row: 1;
     grid-column: 2/4;
   }
 
-  svg {
-    margin-block: -7px; // guess and check
+  & svg {
+    /* guess and check */
+    margin-block: -7px;
     stroke-width: 4px;
 
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       stroke-width: 4px;
     }
   }
@@ -28,15 +27,17 @@
 
 .hero__wrapper {
   margin-inline: var(--cadence);
-  margin-block-end: 3rem; // 48px
-  // border-block-end: 1px solid var(--lead);
+  margin-block-end: 3rem;
+  /* border-block-end: 1px solid var(--lead); */
 
   display: grid;
   width: 100vw;
-  width: calc(100vw - 1rem); // 📣 I dont know why
+  /* TODO: I dont know why */
+  width: calc(100vw - 1rem);
 
   @media (prefers-color-scheme: dark) {
-    border-color: white; // TODO check this against whitesmoke
+    /* TODO check this against whitesmoke */
+    border-color: white;
   }
 
   @media (min-width: 52rem) {
@@ -49,15 +50,15 @@
 
   .hero__wrapper--start,
   .hero__wrapper--end {
+    /* TODO: variable */
     @media (min-width: 52rem) {
-      // background-color: plum;
       border-bottom: 1px solid var(--lead);
 
       @media (prefers-color-scheme: dark) {
         border-color: whitesmoke;
       }
 
-      @media (min-width: $venus) {
+      @media (min-width: 30rem) {
         grid-row: 1;
       }
     }
@@ -76,10 +77,11 @@
     background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 15%));
   }
 
-  @media (min-width: $venus) {
+  @media (min-width: 30rem) {
     grid-row: 1;
     grid-column: 1/3;
     margin-block-end: 2rem;
+    /* ? why am i shortening this? */
     height: calc(100% - 2rem);
   }
 }
@@ -91,14 +93,15 @@
   display: grid;
   align-items: end;
 
-  @media (max-width: $venus) {
+  @media (max-width: 30rem) {
     grid-template-rows: auto 2rem auto;
   }
 
-  @media (min-width: $venus) {
+  @media (min-width: 30rem) {
     padding-inline: var(--cadence);
   }
 
+  /* TODO: variable */
   @media (min-width: 52rem) {
     padding-inline: 0;
     grid-template-columns: auto 2rem auto;
@@ -113,15 +116,19 @@
     opacity: 0.5;
     float: right;
     width: 10rem;
-    shape-outside: ellipse(4.5rem 8rem at 60% 80%); // guess and check
+    /* guess and check */
+    /* TODO: safari check this */
+    shape-outside: ellipse(4.5rem 8rem at 60% 80%);
 
-    @media (min-width: $venus) {
-      shape-outside: ellipse(4.5rem 8rem at 60% 66.66%); // guess and check
+    @media (min-width: 30rem) {
+      /* guess and check */
+      shape-outside: ellipse(4.5rem 8rem at 60% 66.66%);
     }
   }
 
   .squeegee__line {
-    width: calc(100% - 9.75rem); // guess and check
+    /* guess and check */
+    width: calc(100% - 9.75rem);
     height: 100%;
     border-bottom: 1px solid var(--lead);
 
@@ -129,27 +136,26 @@
       border-color: whitesmoke;
     }
 
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       grid-row: 1;
       grid-column: 1;
-      width: 100%; // guess and check
+      width: 100%;
     }
   }
 }
 
-// named secondary to hero
+/* named secondary to hero */
 .sidekick {
   max-width: 60rem;
   margin-inline: auto;
-
-  grid-template-rows: 8rem auto auto auto; // guess and check
-
+  /* guess and check */
+  grid-template-rows: 8rem auto auto auto;
   display: grid;
-  @media (min-width: $venus) {
+
+  @media (min-width: 30rem) {
     grid-template-rows: auto;
     grid-template-columns: 1fr 5rem 1fr;
   }
-  // gap: 1rem;
 
   .cozy {
     aspect-ratio: 16/9;
@@ -160,13 +166,13 @@
     transform: scaleX(-1);
     box-shadow: var(--troposphere);
 
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       grid-row: 1/3;
       grid-column: 1/3;
     }
   }
 
-  blockquote {
+  & blockquote {
     grid-row: 2;
     grid-column: 1;
     padding: 1rem;
@@ -178,7 +184,7 @@
     border-radius: 0.75rem;
     box-shadow: var(--troposphere);
 
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       grid-row: 1;
       grid-column: 2/4;
       max-width: auto;
@@ -189,7 +195,7 @@
     }
   }
 
-  article {
+  & article {
     grid-row: 3;
     grid-column: 1;
     border-radius: var(--bend);
@@ -198,21 +204,22 @@
     padding-inline: var(--cadence);
     box-shadow: var(--troposphere);
 
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       grid-row: 2/4;
       grid-column: 2/4;
-      padding-inline-start: 4rem; // 📣
+      /* TODO: check this */
+      padding-inline-start: 4rem;
     }
   }
 
-  svg {
+  & svg {
     grid-row: 4;
     grid-column: 1;
     justify-self: end;
     z-index: 1;
     margin-block-start: -3rem;
 
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       grid-row: 3/5;
       grid-column: 1/3;
       margin-block-start: 1.5rem;
@@ -229,7 +236,7 @@
   }
 
   > * {
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       grid-row: 1;
       grid-column: 1;
     }
@@ -246,7 +253,7 @@
   }
 
   .sidekick {
-    @media (min-width: $venus) {
+    @media (min-width: 30rem) {
       margin-block-end: 3rem;
     }
   }

@@ -6,20 +6,13 @@ import TreelinesSVG from "../images/tree-lines"
 
 import Nav from "./nav"
 
-function ThisYear() {
-  let today = new Date().getFullYear();
-  // console.log(today);
-  return (
-    <>
-      {today}
-    </>
-  );
-}
-
 export function Trees() {
-  return <StaticImage src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_299275392_Preview.jpg" alt="painted trees" className="trees" />
+  return <StaticImage
+    src="https://jarrodsemmenswindowcleaning.s3.us-west-1.amazonaws.com/stock-previews/AdobeStock_299275392_Preview.jpg"
+    alt="painted trees"
+    className="trees"
+  />
 }
-
 
 const Footer = () => {
   return (
@@ -76,8 +69,11 @@ const Footer = () => {
 
           <ul className="copyright pad__up">
             <li>Jarrod Semmens Window Cleaning</li>
-            <li><ThisYear /></li>
-            <li>Terms and Conditions</li>
+            <li>
+              {new Date().getFullYear()}
+
+            </li>
+            {/* <li>Terms and Conditions</li> */}
             {/* &copy;  */}
           </ul>
         </div>
@@ -91,8 +87,8 @@ const Footer = () => {
 
       <ul className="copyright pad__down">
         <li>Jarrod Semmens Window Cleaning</li>
-        <li><ThisYear /></li>
-        <li>Terms and Conditions</li>
+        <li>{new Date().getFullYear()}</li>
+        {/* <li>Terms and Conditions</li> */}
         {/* &copy;  */}
       </ul>
     </footer>

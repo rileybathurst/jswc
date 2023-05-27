@@ -1,14 +1,16 @@
 /*------------------------------------*/
-//  #TYPOGRAPHY
+  /* #TYPOGRAPHY */
 /*------------------------------------*/
 
-// https://type-scale.com 1.2 minor third
+/* https://type-scale.com 1.2 minor third */
 
-// 24px baseline
-// 48px
-// 72px
-// 96px
-// 120px
+/*
+24px baseline
+48px
+72px
+96px
+120px
+*/
 
 body {
   font-family: fieldwork, "-apple-system", "Roboto", sans-serif;
@@ -22,15 +24,17 @@ h4,
 h5,
 h6,
 blockquote {
+  /* browser reset */
+  /* TODO: make it something more exciting */
   font-family: Georgia, sans-serif;
   font-weight: 500;
   font-style: italic;
-  margin-block-start: 0; // browser reset
+  margin-block-start: 0;
 }
 
 h1 {
   font-size: var(--freel);
-  line-height: 1.6; // 64px
+  line-height: 1.6;
 }
 
 h2 {
@@ -62,11 +66,11 @@ small,
 p {
   font-weight: 400;
   font-style: normal;
-  line-height: 1.5; // 24px
+  line-height: 1.5;
   margin-block-end: 1.6rem;
 }
 
-@media (min-width: $venus) {
+@media (min-width: 30rem) {
   .end {
     text-align: right;
   }
@@ -84,21 +88,26 @@ blockquote {
 
 address {
   line-height: 1.5;
+  /* reset */
+  font-style: normal;
 }
 
+/* TODO: naming */
 .br__pad {
   display: none;
-  @media (min-width: $venus) {
+  @media (min-width: 30rem) {
     display: initial;
   }
 }
 
 .longline {
+  /* TODO: variables */
   font-size: clamp(
     0.875rem,
     1.667vw,
     1rem
-  ); // 14px and up? the email is just really long so trying to make it fit without it being too obvious
+  );
+  /* 14px and up? the email is just really long so trying to make it fit without it being too obvious */
 }
 
 :is(.hero, .sidekick) h2 {

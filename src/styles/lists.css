@@ -1,5 +1,5 @@
 /*------------------------------------*/
-//  #LISTS
+  /* #LISTS */
 /*------------------------------------*/
 
 ul li {
@@ -7,17 +7,20 @@ ul li {
 }
 
 /*------------------------------------*/
-//  #NAV
+  /* #NAV */
 /*------------------------------------*/
 
 nav ul {
+  /* browser reset */
+  padding-inline-start: 0;
+
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-  padding-inline-start: 0; // browser reset
+  /* TODO: variable */
   gap: 0.8rem;
 
-  li {
+  & li {
     margin-block-end: 0;
   }
 }

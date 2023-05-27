@@ -1,0 +1,33 @@
+/*------------------------------------*/
+  /* #MENU */
+/*------------------------------------*/
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  z-index: 1;
+  position: relative;
+}
+
+.button-spinner {
+  /* ! needs to be talled for A11y */
+  width: 100vw;
+  line-height: 1.5;
+  height: 2rem;
+  overflow: hidden;
+  /* I need this to hide things */
+  transform: translate3D(0, 0, 0);
+  text-align: start;
+}
+
+.span-styles {
+  position: fixed;
+  height: 1rem;
+  line-height: 2rem;
+  transition: 2s ease;
+  /* TODO: I dont know why I have to add this something about defaults probably */
+  margin-block-start: -1rem;
+}

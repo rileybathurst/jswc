@@ -1,3 +1,7 @@
+/*------------------------------------*/
+  /* #COLOR */
+/*------------------------------------*/
+
 body {
   color: var(--almost-black);
 
@@ -24,7 +28,7 @@ body {
     background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 18%));
   }
 
-  a {
+  & a {
     @media (prefers-color-scheme: dark) {
       background-color: hsl(var(--pine-hs), calc(var(--pine-l) - 22%));
       color: whitesmoke;
@@ -33,7 +37,7 @@ body {
 }
 
 .sidekick {
-  article {
+  & article {
     background-color: ghostwhite;
 
     @media (prefers-color-scheme: dark) {
@@ -69,19 +73,19 @@ header {
 
 .footer__stripe {
   @supports not (background-color: lch(95% 22 88)) {
-    // move this all to variables
-    background-color: lch(95% 22 88); // 📣
+    /* TODO: move this all to variables */
+    background-color: lch(95% 22 88); /* TODO: variable */
   }
-  background-color: rgb(99% 93% 78%); // 📣
-  border-top: 1px solid rgb(103% 74% 18%); // 📣
-  border-bottom: 1px solid rgb(103% 74% 18%); // 📣
+  background-color: rgb(99% 93% 78%); /* TODO: variable */
+  border-top: 1px solid rgb(103% 74% 18%); /* TODO: variable */
+  border-bottom: 1px solid rgb(103% 74% 18%); /* TODO: variable */
 
   @media (prefers-color-scheme: dark) {
     @supports not (background-color: lch(95% 22 88)) {
-      background-color: lch(17% 22 79); // 📣
+      background-color: lch(17% 22 79); /* TODO: variable */
     }
-    background-color: rgb(21% 15% 2%); // 📣
-    border-top: 1px solid rgb(103% 74% 18%); // 📣
-    border-bottom: 1px solid rgb(103% 74% 18%); // 📣
+    background-color: rgb(21% 15% 2%); /* TODO: variable */
+    border-top: 1px solid rgb(103% 74% 18%); /* TODO: variable */
+    border-bottom: 1px solid rgb(103% 74% 18%); /* TODO: variable */
   }
 }

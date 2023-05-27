@@ -1,9 +1,3 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
 
 {/* // ! this is very different than my current implementation May 2022 */ }
 
@@ -160,7 +154,7 @@ Seo.defaultProps = {
   description: ``,
   image: ``,
   itemType: `https://schema.org/LocalBusiness`,
-  itemScope: false,
+  // itemScope: false, this was here but throws a console error
 }
 
 Seo.propTypes = {

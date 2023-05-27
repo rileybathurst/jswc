@@ -17,7 +17,7 @@ const NotFoundPage = () => {
 
         <article className="triad">
           <section className="one-two">
-            <h2>Page not found</h2>
+            <h2>We must have missed a spot!</h2>
             <p className="paragraph-styles">
               Sorry{" "}
               <span role="img" aria-label="Pensive emoji">

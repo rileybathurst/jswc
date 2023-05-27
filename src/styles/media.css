@@ -1,9 +1,9 @@
 /*------------------------------------*/
-//  #MEDIA
+  /* #MEDIA */
 /*------------------------------------*/
 
 /*------------------------------------*/
-//  #SVG
+  /* #SVG */
 /*------------------------------------*/
 
 svg {
@@ -19,10 +19,13 @@ svg {
 }
 
 .yelp {
+  /* specifically not a variable */
   fill: #d32323;
 }
 
 .yelp__link:hover .yelp {
+  /* specifically not a variable */
+  /* TODO: check the contrast */
   fill: red;
 }
 
@@ -34,10 +37,6 @@ svg {
   max-height: 15rem;
 }
 
-/* .tahoe-svg svg {
-  fill: pink; // test
-} */
-
 .trees {
   @media (prefers-color-scheme: dark) {
     mix-blend-mode: multiply;
@@ -45,11 +44,12 @@ svg {
 }
 
 .tree-lines {
-  svg {
+  & svg {
     max-width: 10rem;
     max-height: 10rem;
     fill: none;
     stroke: currentColor;
+    /* variable */
     stroke-width: 2px;
   }
 }

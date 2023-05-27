@@ -1,0 +1,18 @@
+/*------------------------------------*/
+  /* #VARIABLES */
+/*------------------------------------*/
+
+.pad__down {
+  @media (min-width: 30rem) {
+    display: none !important;
+  }
+}
+
+.pad__up {
+  display: none !important;
+
+  @media (min-width: 30rem) {
+  /* has to be important when the smaller is */
+    display: initial !important;
+  }
+}

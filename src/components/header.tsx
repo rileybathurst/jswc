@@ -22,6 +22,7 @@ const Header = () => {
       {/* keep links out of the seo */}
       {/* typescript needs @types/react-helmet */}
       <Helmet>
+        {/* // ! move this to gatsby-browser.tsx */}
         <link
           rel="stylesheet"
           href="https://use.typekit.net/vpi7tts.css"
