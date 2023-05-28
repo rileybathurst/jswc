@@ -28,12 +28,9 @@
 .hero__wrapper {
   margin-inline: var(--cadence);
   margin-block-end: 3rem;
-  /* border-block-end: 1px solid var(--lead); */
+  width: calc(100vw - calc(var(--cadence))*2);
 
   display: grid;
-  width: 100vw;
-  /* TODO: I dont know why */
-  width: calc(100vw - 1rem);
 
   @media (prefers-color-scheme: dark) {
     /* TODO check this against whitesmoke */
@@ -201,6 +198,7 @@
     border-radius: var(--bend);
     z-index: 1;
     padding: 1rem;
+    margin-inline: var(--cadence);
     padding-inline: var(--cadence);
     box-shadow: var(--troposphere);
 

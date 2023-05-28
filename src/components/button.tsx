@@ -2,8 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import MenuList from './menu-list';
 
-import Nav from "./nav"
-
+// ! naming
 function Button() {
   const [slide, setSlide] = useState('firstload');
   const [amount, setAmount] = useState(0);
@@ -35,7 +34,6 @@ function Button() {
           style={{
             transform: 'translateY(-' + amount + 'px)',
             marginBottom: '-' + amount + 'px',
-            // marginBottom: '-134px',
           }}
           ref={ref}
           className='menu__small'

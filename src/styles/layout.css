@@ -260,7 +260,6 @@ footer nav ul {
   }
 }
 
-/* ! media queries off for testing */
 .footer__stripe {
   display: grid;
   margin-block: 2rem;
@@ -271,6 +270,7 @@ footer nav ul {
     display: grid;
     max-width: var(--neptune);
     justify-self: flex-end;
+    margin-inline: var(--cadence);
     padding-inline-end: 3rem;
 
     @media (min-width: 30rem) {

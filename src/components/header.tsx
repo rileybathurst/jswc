@@ -18,40 +18,34 @@ export function Cartoon() {
 
 const Header = () => {
   return (
-    <>
-      {/* keep links out of the seo */}
-      {/* typescript needs @types/react-helmet */}
-      <Helmet>
-        {/* // ! move this to gatsby-browser.tsx */}
-        <link
-          rel="stylesheet"
-          href="https://use.typekit.net/vpi7tts.css"
-        // crossorigin="use-credentials" // 📣 this has an issue either on or off
-        />
-      </Helmet>
 
+    <header>
       <h1 className="sr-only"><Link to="/">Jarrod Semmens Window Cleaning</Link></h1>
-      <header>
-        <Forrest />{/* full width */}
+      {/* full width */}
+      <Forrest />
 
-        <div className="header__container">
-          <Forrest />
-          {/* <Logo /> */}
-          <Link to='/' className="header__logo" title='Jarrod Semmens Window Cleaning'><Logo /></Link>
+      <div className="header__container">
+        <Forrest />
+        <Link
+          to='/'
+          className="header__logo"
+          title='Jarrod Semmens Window Cleaning'
+        >
+          <Logo />
+        </Link>
 
-          {/* <SmallMenu /> */}
-          <Button />
+        <Button />
 
-          <div className='cartoon__wrapper'>
-            <Cartoon />
-          </div>
+        {/* // TODO: this needs the hover come out of the circle */}
+        <div className='cartoon__wrapper'>
+          <Cartoon />
         </div>
+      </div>
 
-        <div className="large_menu">
-          <Nav />
-        </div>
-      </header>
-    </>
+      <div className="large_menu">
+        <Nav />
+      </div>
+    </header>
   )
 }
 
