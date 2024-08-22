@@ -32,12 +32,11 @@ module.exports = {
         "South Lake Tahoe",
       ]
     },
-    // paymentAccepted: 'Cash, deductibles, co-pays, co-insurance',
     location: {
       '@type': 'Place',
       'address': {
         "@type": "PostalAddress",
-        "streetAddress": "3055 Cedarwood Dr",
+        "streetAddress": "PO Box 7614",
         "addressLocality": "Tahoe City",
         "addressRegion": "CA",
         "postalCode": "96145",

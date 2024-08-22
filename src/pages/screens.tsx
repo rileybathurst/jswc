@@ -38,6 +38,16 @@ const ScreenPage = () => {
           </section>
         </article>
 
+        <article className="triad">
+          <section className="one-two">
+            <h3>Screens made at</h3>
+            <address>
+              5609 Uplands Road<br />
+              Carnelian Bay 96140
+            </address>
+          </section>
+        </article>
+
       </main>
       <Footer />
     </>

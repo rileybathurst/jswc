@@ -52,7 +52,7 @@ const Footer = () => {
           </p>
 
           <address>
-            3055 Cedarwood Dr<br />
+            PO Box 7614<br />
             Tahoe City, CA 96145
           </address>
 
